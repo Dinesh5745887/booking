@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Taxi Booking</h1>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" required>
+            </div>
+            <div class="form-group">
+                <label for="dropoff">Drop-off Location:</label>
+                <input type="text" id="dropoff" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Pickup Time:</label>
+                <input type="datetime-local" id="time" required>
+            </div>
+            <button type="submit">Book Taxi</button>
+        </form>
+        <div id="confirmation" class="confirmation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
